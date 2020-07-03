@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Is it necessary to declare "lang='en-us'"? Or can I just declare <html>? -->
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/style.css" type="tex/css" media="screen">
+     <!-- Is 'type' declaration necessary? What does this do? / 'media' default is screen so do I need this? -->
+    <title>Niku Khatami Project Portfolio</title>
+</head>
+
+<body>
+    <!-- Container used to center content on page -->
+    <div id="container">
+        <!-- Logo image -->
+        <p id="logo>"><a href="#"><img src="./assets/images/logo.png" alt="Flag Logo" /></a>
+        </p>
+
+        <!-- Nav Menu - Unordered List -->
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Text inside header bg -->
+        <div id="header">
+            <h1>Welcome to my portfolio, have a look around!</h1>
+            <h2>In the beginning of my Web Dev career, invest early for future gains</h2>
+            <!-- Button links to portfolio of work -->
+            <p class="button"><a href="portfolio.html">View portfolio</a></p>
+        </div>
+
+        <div id="body">
+            <!-- Beginning of body text, starts with h3 heading -->
+            <h3>About Niku Khatami</h3>
+
+            <p>I am new to web development but by the time this bootcamp is over I will be ready. Ready to learn, ready to code.</p>
+            <div class="grid-container">
+                <!-- Grid system in container, wrap whole grid in container -->
+
+            <!-- Grid 3 wide 3 tall. -->
+            <!-- Remember to add href and jpg links to open up individual project links in own window -->
+            <div class="portfolio-item grid-item:first-child">
+                <!-- First child should take two rows, two columns. -->
+
+                <a href="#"><img src="./assets/images/portfolio-1.jpg" alt="Thumbnail for Project 1"/></a>
+                <p class="button1"><a href="#">Title 1; html/css</a></p>
+            </div>
+
+            <div class="portfolio-item grid-item">
+                <a href="#"><img src="./assets/images/portfolio-2.jpg" alt="Thumbnail for Project 2"/></a>
+                <p class="button1"><a href="#">Title 1; html/css</a></p>
+            </div>
+
+            <div class="portfolio-item grid-item">
+                <a href="#"><img src="./assets/images/portfolio-3.jpg" alt="Thumbnail for Project 3"/></a>
+                <p class="button1"><a href="#">Title 1; html/css</a></p>
+            </div>
+
+            <div class="portfolio-item grid-item">
+                <a href="#"><img src="./assets/images/portfolio-4.jpg" alt="Thumbnail for Project 4"/></a>
+                <p class="button1"><a href="#">Title 1; html/css</a></p>
+            </div>
+            <!-- End of protfolio thumbnails with embedded links -->
+
+            </div>
+        </div>
+        
+        <!-- Footer with copyright and top navigation -->
+        <div id="footer">
+            <p id="copyright">&copy; Niku Khatami / American Plum Studios</p>
+            <p id="totop"><a href="#">To the top</a></p>
+        </div>
+    
+    </div>
+
+
+
+</body>
+
+
+</html>
