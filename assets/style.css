@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0; 
+
+}
+
+body {
+	background: url(./images/flowersbg.png);
+    font: 16px Helvetica, Arial, Sans-Serif; 
+    color: black; 
+    line-height: 24px;
+    display: block;
+}
+
+.container {
+    width: 960px; 
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 10px auto 0 auto; 
+    position: relative;
+    text-align: center;
+    width: 200px; 
+    height: 150px; 
+    overflow: hidden;
+    background: url(./images/Plum.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 0.6vw;
+    text-shadow: 0px 1px 1px #494949;
+    opacity: .8;
+    color: #b8b6b2;;
+}
+
+ul#nav {
+    width: 940px; 
+    list-style: none; 
+    overflow: hidden; 
+    margin: -134px auto 25px auto;
+}
+	ul#nav li {
+        width: 126px; 
+        height: 33px;
+        float: left;
+        padding: 13px 0 0 0;
+		background: url(./images/plainbg.png);
+        font-weight: bold; 
+        text-align: center; 
+        text-transform: uppercase;
+    }
+    ul#nav li:nth-child(1) {
+        margin: 0 60px 0 0;
+    }
+    ul#nav li:nth-child(2) {
+        margin: 0 316px 0 0;
+    }
+    ul#nav li:nth-child(3) {
+        margin: 0 60px 0 0;
+    }
+    ul#nav li:nth-child(4) {
+        margin: 0;
+    }
+		ul#nav li a {
+            color: #616369; 
+            text-decoration: none;
+		}
+			ul#nav li a:hover {
+				color: #a12121;
+            }
+
+#header {
+    height: 244px; 
+    padding: 52px 100px 100px 57px;
+    background: url(./images/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+	#header h1 {
+        font: 38px Georgia, Serif; 
+        color: white; 
+        letter-spacing: 2px; 
+        margin: 20px 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+	}
+	#header h2 {
+        width: 510px; 
+        font: 30px Georgia, Serif; 
+        color: #f2f0eb; 
+        letter-spacing: 2px; 
+        margin: 0 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+    }  
+	#header p.button a {
+        display:inline-block;
+        padding:0.46em 1.6em;
+        border:0.1em solid #000000;
+        margin:0 0.2em 0.2em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#000000;
+        text-shadow: .02em .02em rgba(0,0,0,0.35);
+        background-color: white;
+        text-align: center;
+        transition: all 0.15s;
+        opacity: .8;
+        }
+        #header p.button a:hover{
+        text-shadow: 0 0 4em blue;
+        color: blue;
+        border-color: blue;
+        opacity: 1;
+        }
+
+#publishing {
+    background: url(./images/plainbg.png) repeat-y;
+    padding: 57px 69px 50px 69px; 
+    overflow: hidden;
+}
+    
+    #publishing h3 {
+        font: 26px Georgia, Serif; 
+        letter-spacing: 2px; 
+        margin: 0 0 20px 0;
+    }
+        
+    #publishing p {
+        margin: 0 0 30px 0;
+    }
+
+
+.work-content {
+    background: url(./images/plainbg.png) repeat-y;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .work-content > div {
+        padding: 10px 20px;
+    }
+    .left-content {
+        flex: 2;
+    }
+        .work-content > div > h2 {
+            font-size: 2.0vw;
+            line-height: 30px;
+        }
+    .right-content {
+        flex: 14;
+    }
+        
+        .grid-work-parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            height: 450px;
+        }
+            .grid-item {
+                border: 2px solid white;
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .grid-work-title {
+                position: absolute;
+                bottom: 10px;
+                margin: 10px 0;
+                padding: 10px 15px;
+                font-weight: bold;
+                font-size: 1.25vw;
+                opacity: 1;
+            }
+                .grid-work-title span {
+                    font-size: .8vw;
+                    font-weight: normal;
+                }
+
+            .grid-work-1{
+                grid-column: span 2 / auto;
+                grid-row: span 2 / auto;
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/digital-marketing-meeting.jpg) no-repeat;
+                background-size: cover;
+                color: white;
+    
+            }
+            .grid-work-1:hover{
+                background-image: url(./images/digital-marketing-meeting.jpg);
+                color: purple;
+            }
+
+            .grid-work-2 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/panorama.jpg) no-repeat;
+                background-size: cover;
+                color:white;
+            }
+            .grid-work-2:hover{
+                background-image: url(./images/panorama.jpg);
+                color: purple;
+            }
+
+            .grid-work-3 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
+                background-size: cover;
+                color: white;
+            }
+            .grid-work-3:hover{
+                background-image: url(./images/Plum.png);
+                color: purple;
+            }
+
+            .grid-work-4 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
+                background-size: cover;
+                color: white;
+            }
+            .grid-work-4:hover{
+                background-image: url(./images/Plum.png);
+                color: purple;
+            }
+
+            .grid-work-5 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
+                background-size: cover;
+                color: white;
+            }
+            .grid-work-5:hover{
+                background-image: url(./images/Plum.png);
+                color: purple;
+            }
+
+#footer {
+    /* Some padding and margin added to show seperation for future styling */
+    background: url(./images/plainbg.png) no-repeat; 
+    padding: 40px 0 10px 0;
+    overflow: hidden; 
+    margin: 10px 0 0 0;
+}
+    #footer p#copyright {
+        font-size: 12px; 
+        float: left; 
+        margin: 0 0 0 30px; 
+        color: #b8b6b2;
+    }
+    #footer p#totop {
+        font-size: 12px; 
+        float: right; 
+        margin: 0 30px 0 0;
+    }
+        #footer a {
+        color: #a12121; 
+        text-decoration: none;
+    }
+        #footer a:hover {
+            color: #671111;
+        }

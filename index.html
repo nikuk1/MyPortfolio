@@ -4,17 +4,19 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/style.css" type="tex/css" media="screen">
+    <link rel="stylesheet" href="./assets/style.css" type="text/css" media="screen">
      <!-- Is 'type' declaration necessary? What does this do? / 'media' default is screen so do I need this? -->
     <title>Niku Khatami Project Portfolio</title>
 </head>
 
 <body>
     <!-- Container used to center content on page -->
-    <div id="container">
-        <!-- Logo image -->
-        <p id="logo>"><a href="#"><img src="./assets/images/logo.png" alt="Flag Logo" /></a>
-        </p>
+    <div class="container">
+        <!-- Logo top center of homepage -->
+        <p class="logo" onclick="location.href='#'" alt="Plum Studios Logo"> 
+            <!-- Line breaks to move text under background -->
+            <br/><br/><br/><br/><br/>
+            &copy; Niku Khatami / Plum Studios</p>
 
         <!-- Nav Menu - Unordered List -->
         <ul id="nav">
@@ -27,49 +29,69 @@
         <div id="header">
             <h1>Welcome to my portfolio, have a look around!</h1>
             <h2>In the beginning of my Web Dev career, invest early for future gains</h2>
-            <!-- Button links to portfolio of work -->
+            <!-- Button link to portfolio of work -->
             <p class="button"><a href="portfolio.html">View portfolio</a></p>
         </div>
 
-        <div id="body">
+        <div id="publishing">
             <!-- Beginning of body text, starts with h3 heading -->
             <h3>About Niku Khatami</h3>
+ 
+            <p>Always ready to learn and code. I am new to web development but this bootcamp is a great first step.</p>
+        </div>
 
-            <p>I am new to web development but by the time this bootcamp is over I will be ready. Ready to learn, ready to code.</p>
-            <div class="grid-container">
-                <!-- Grid system in container, wrap whole grid in container -->
-
-            <!-- Grid 3 wide 3 tall. -->
-            <!-- Remember to add href and jpg links to open up individual project links in own window -->
-            <div class="portfolio-item grid-item:first-child">
-                <!-- First child should take two rows, two columns. -->
-
-                <a href="#"><img src="./assets/images/portfolio-1.jpg" alt="Thumbnail for Project 1"/></a>
-                <p class="button1"><a href="#">Title 1; html/css</a></p>
-            </div>
-
-            <div class="portfolio-item grid-item">
-                <a href="#"><img src="./assets/images/portfolio-2.jpg" alt="Thumbnail for Project 2"/></a>
-                <p class="button1"><a href="#">Title 1; html/css</a></p>
-            </div>
-
-            <div class="portfolio-item grid-item">
-                <a href="#"><img src="./assets/images/portfolio-3.jpg" alt="Thumbnail for Project 3"/></a>
-                <p class="button1"><a href="#">Title 1; html/css</a></p>
-            </div>
-
-            <div class="portfolio-item grid-item">
-                <a href="#"><img src="./assets/images/portfolio-4.jpg" alt="Thumbnail for Project 4"/></a>
-                <p class="button1"><a href="#">Title 1; html/css</a></p>
-            </div>
-            <!-- End of protfolio thumbnails with embedded links -->
-
+    <!-- Section tag to wrap portfolio content -->
+    <section class="work-content">
+        <!-- Left sided header -->
+        <div class="left-content">
+            <h2>Recent Projects</h2>
+        </div>
+        <!-- Right sided grid -->
+        <div class="right-content">
+            <div class="grid-work-parent">
+                <!-- Used 'onclick' here instead of 'a href' to simplify css but may want to revisit this to have hand cursor appear -->
+                <div class="grid-item grid-work-1" onclick="location.href='https://nikuk1.github.io/code_Refactor-Challenge/';">       
+                    <div class="grid-work-title">
+                        HTML CSS Git Challenge: Code Refactor
+                        <span><br/>First Challenge in Boot Camp</span>
+                    </div>
+                </div>  
+                <!-- Box 2 -->
+                <div class="grid-item grid-work-2" onclick="location.href='https://nnorman15.github.io/proj1-group5/'">
+                    <div class="grid-work-title">
+                        Plan a Hike
+                        <span><br/>Search for weather & hiking trails!</span>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="grid-item grid-work-3" onclick="location.href='work_03.html';">
+                    <div class="grid-work-title">
+                        Work 3
+                        <span><br/>Summary</span>
+                    </div>
+                </div>
+                <!-- Box 4 -->
+                <div class="grid-item grid-work-4" onclick="location.href='work_04.html';">
+                    <div class="grid-work-title">
+                        Work 4
+                        <span><br/>Summary</span>
+                    </div>
+                </div>
+                <!-- Box 5 -->
+                <div class="grid-item grid-work-5" onclick="location.href='work_06.html';">
+                    <div class="grid-work-title">
+                        Work 5
+                        <span><br/>Summary</span>
+                    </div>
+                </div>
             </div>
         </div>
-        
+    </section>
+    <!-- End of grid layout section -->
+
         <!-- Footer with copyright and top navigation -->
         <div id="footer">
-            <p id="copyright">&copy; Niku Khatami / American Plum Studios</p>
+            <p id="copyright">&copy; Niku Khatami / Plum Studios</p>
             <p id="totop"><a href="#">To the top</a></p>
         </div>
     
