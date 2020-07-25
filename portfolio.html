@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" media="screen">
      <!-- Is 'type' declaration necessary? What does this do? / 'media' default is screen so do I need this? -->
-    <title>Niku Khatami Project Portfolio</title>
+    <title>My Project Portfolio</title>
 </head>
 
 <body>
@@ -26,30 +26,26 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <!-- Text inside header bg -->
-        <div id="header">
-            <h1>Welcome to my portfolio, have a look around!</h1>
-            <h2>In the beginning of my Web Dev career, invest early for future gains</h2>
-            <!-- Button link to portfolio of work -->
-            <p class="button"><a href="portfolio.html">View portfolio</a></p>
-        </div>
+        <!-- Different id here from index.html -->
+            <div id="about-header" class="page">
+                <h1>My Project Portfolio</h1>
+            </div>
+            <!-- Remove button link to portfolio of work -->
 
-        <div id="publishing">
-            <!-- Beginning of body text, starts with h3 heading -->
-            <h3>About Niku Khatami</h3> 
-            <p>Always ready to learn and code. I am new to web development but this bootcamp is a great first step.</p>
-        </div>
+            <div id="about-content">
+                <!-- Beginning of text above portfolio, starts with p tag -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam soluta numquam perferendis illo culpa ducimus? Delectus hic officia nesciunt consequuntur expedita provident voluptatum doloribus eveniet, voluptas quaerat. Asperiores, sint.</p>
+                <!-- Add more P tags and update font styling if necessary -->
+            </div>
 
         <!-- Section tag to wrap portfolio content -->
         <section class="work-content">
-            <!-- Left sided header -->
-            <div class="left-content">
-                <h2>Recent Projects</h2>
-            </div>
-            <!-- Right sided grid -->
+
+            <!-- Just keep grid from index but change class to smaller box class -->
             <div class="right-content">
-                <div class="grid-work-parent">
+                <div class="grid-work-parent-portfolio">
                     <!-- Used 'onclick' here instead of 'a href' to simplify css but may want to revisit this to have hand cursor appear -->
-                    <div class="grid-item grid-work-1" onclick="location.href='https://nikuk1.github.io/code_Refactor-Challenge/';">       
+                    <div class="grid-item grid-work-1-portfolio" onclick="location.href='https://nikuk1.github.io/code_Refactor-Challenge/';">       
                         <div class="grid-work-title">
                             HTML CSS Git Challenge: Code Refactor
                             <span><br/>First Challenge in Boot Camp</span>
@@ -83,6 +79,27 @@
                             <span><br/>Summary</span>
                         </div>
                     </div>
+                    <!-- Box 6 -->
+                    <div class="grid-item grid-work-generic" onclick="location.href='work_06.html';">
+                        <div class="grid-work-title">
+                            Work 6
+                            <span><br/>Summary</span>
+                        </div>
+                    </div>
+                    <!-- Box 7 -->
+                    <div class="grid-item grid-work-generic" onclick="location.href='work_07.html';">
+                        <div class="grid-work-title">
+                            Work 7
+                            <span><br/>Summary</span>
+                        </div>
+                    </div>
+                    <!-- Box 8 -->
+                    <div class="grid-item grid-work-generic" onclick="location.href='work_08.html';">
+                        <div class="grid-work-title">
+                            Work 8
+                            <span><br/>Summary</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,7 +110,9 @@
             <p id="copyright">&copy; Niku Khatami / Plum Studios</p>
             <p id="totop"><a href="#">To the top</a></p>
         </div>
-    
+
+        </div>
+
     </div>
 
 </body>
