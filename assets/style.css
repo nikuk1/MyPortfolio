@@ -4,6 +4,10 @@
 
 }
 
+div {
+    display: block;
+}
+
 body {
 	background: url(./images/flowersbg.png);
     font: 16px Helvetica, Arial, Sans-Serif; 
@@ -30,7 +34,7 @@ body {
     font-size: 0.6vw;
     text-shadow: 0px 1px 1px #494949;
     opacity: .8;
-    color: #b8b6b2;;
+    color: #b8b6b2;
 }
 
 ul#nav {
@@ -257,3 +261,42 @@ ul#nav {
         #footer a:hover {
             color: #671111;
         }
+
+/* Beginning of about.html styling */
+
+#about-header {
+    height: 40px; 
+    padding: 52px 100px 100px 57px;
+    background: url(./images/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+	#about-header h1 {
+        font: 38px Georgia, Serif; 
+        color: white; 
+        letter-spacing: 2px; 
+        margin: 20px 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+    }
+    
+#about-content {
+    background: url(./images/plainbg.png) repeat-y;
+    padding: 57px 69px 50px 69px; 
+    overflow: hidden;
+}
+        
+    #about-content p {
+        margin: 0 0 30px 0;
+    }
+
+#about-content .profile-pic {
+    float: right;
+    background: url(./images/headshot.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px; 
+    height: 350px; 
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto 0 auto; 
+}    
