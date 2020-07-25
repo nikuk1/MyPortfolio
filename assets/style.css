@@ -4,6 +4,10 @@
 
 }
 
+div {
+    display: block;
+}
+
 body {
 	background: url(./images/flowersbg.png);
     font: 16px Helvetica, Arial, Sans-Serif; 
@@ -30,7 +34,7 @@ body {
     font-size: 0.6vw;
     text-shadow: 0px 1px 1px #494949;
     opacity: .8;
-    color: #b8b6b2;;
+    color: #b8b6b2;
 }
 
 ul#nav {
@@ -179,15 +183,16 @@ ul#nav {
                     font-weight: normal;
                 }
 
-            .grid-work-1{
+            .grid-work-1 {
                 grid-column: span 2 / auto;
                 grid-row: span 2 / auto;
                 background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/digital-marketing-meeting.jpg) no-repeat;
                 background-size: cover;
+                background-position: center;
                 color: white;
     
             }
-            .grid-work-1:hover{
+            .grid-work-1:hover {
                 background-image: url(./images/digital-marketing-meeting.jpg);
                 color: purple;
             }
@@ -195,6 +200,7 @@ ul#nav {
             .grid-work-2 { 
                 background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/panorama.jpg) no-repeat;
                 background-size: cover;
+                background-position: center;
                 color:white;
             }
             .grid-work-2:hover{
@@ -202,32 +208,13 @@ ul#nav {
                 color: purple;
             }
 
-            .grid-work-3 { 
+            .grid-work-generic { 
                 background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
                 background-size: cover;
+                background-position: center;
                 color: white;
             }
-            .grid-work-3:hover{
-                background-image: url(./images/Plum.png);
-                color: purple;
-            }
-
-            .grid-work-4 { 
-                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
-                background-size: cover;
-                color: white;
-            }
-            .grid-work-4:hover{
-                background-image: url(./images/Plum.png);
-                color: purple;
-            }
-
-            .grid-work-5 { 
-                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
-                background-size: cover;
-                color: white;
-            }
-            .grid-work-5:hover{
+            .grid-work-generic:hover{
                 background-image: url(./images/Plum.png);
                 color: purple;
             }
@@ -257,3 +244,68 @@ ul#nav {
         #footer a:hover {
             color: #671111;
         }
+
+/* Beginning of smaller header styling */
+#about-header {
+    height: 40px; 
+    padding: 52px 100px 100px 57px;
+    background: url(./images/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+	#about-header h1 {
+        font: 38px Georgia, Serif; 
+        color: white; 
+        letter-spacing: 2px; 
+        margin: 20px 0 20px 0;
+		text-shadow: 0px 3px 3px #494949;
+    }
+/* End of smaller header styling */
+
+/* Beginning of about content styling */  
+#about-content {
+    background: url(./images/plainbg.png) repeat-y;
+    padding: 57px 69px 50px 69px; 
+    overflow: hidden;
+}
+        
+    #about-content p {
+        margin: 0 0 30px 0;
+    }
+
+#about-content .profile-pic {
+    float: right;
+    background: url(./images/headshot.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px; 
+    height: 350px; 
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto 0 auto; 
+}    
+/* End of about content styling */
+
+/* Beginning of portfolio styling */
+.grid-work-parent-portfolio {
+    display: grid;
+    /* Changed grid to 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 450px;
+}
+
+/* Mimic styling of other boxes */
+.grid-work-1-portfolio {
+    background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/digital-marketing-meeting.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+.grid-work-1-portfolio:hover {
+    background-image: url(./images/digital-marketing-meeting.jpg);
+    color: purple;
+}
+/* End of portfolio styling */
+
