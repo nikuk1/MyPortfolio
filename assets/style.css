@@ -186,28 +186,95 @@ ul#nav {
             .grid-work-1 {
                 grid-column: span 2 / auto;
                 grid-row: span 2 / auto;
-                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/digital-marketing-meeting.jpg) no-repeat;
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/proj3.png) no-repeat;
                 background-size: cover;
                 background-position: center;
                 color: white;
     
             }
             .grid-work-1:hover {
-                background-image: url(./images/digital-marketing-meeting.jpg);
+                background-image: url(./images/proj3.png);
                 color: purple;
             }
 
             .grid-work-2 { 
-                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/panorama.jpg) no-repeat;
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Here-There.png) no-repeat;
                 background-size: cover;
                 background-position: center;
                 color:white;
             }
             .grid-work-2:hover{
-                background-image: url(./images/panorama.jpg);
+                background-image: url(./images/Here-There.png);
                 color: purple;
             }
 
+            .grid-work-3 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/project_screenshot.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-3:hover{
+                background-image: url(./images/project_screenshot.png);
+                color: purple;
+            }
+
+            .grid-work-4 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/codequiz-screenshot.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-4:hover{
+                background-image: url(./images/codequiz-screenshot.png);
+                color: purple;
+            }
+
+            .grid-work-5 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/workday-website-screenshot.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-5:hover{
+                background-image: url(./images/workday-website-screenshot.png);
+                color: purple;
+            }
+
+            .grid-work-6 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/weather-report-screenshot.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-6:hover{
+                background-image: url(./images/weather-report-screenshot.png);
+                color: purple;
+            }
+
+
+            .grid-work-7 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/readme-generator.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-7:hover{
+                background-image: url(./images/readme-generator.png);
+                color: purple;
+            }
+
+            .grid-work-8 { 
+                background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/team-builder.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            .grid-work-8:hover{
+                background-image: url(./images/team-builder.png);
+                color: purple;
+            }
+            
             .grid-work-generic { 
                 background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/Plum.png) no-repeat;
                 background-size: cover;
@@ -297,14 +364,14 @@ ul#nav {
 
 /* Mimic styling of other boxes */
 .grid-work-1-portfolio {
-    background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/digital-marketing-meeting.jpg) no-repeat;
+    background: linear-gradient(rgba(230, 22, 22, 0.315) 0%, rgba(46, 106, 202, 0.356) 60%, rgba(14, 73, 6, 0.363) 120%), url(./images/proj3.png) no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
 
 }
 .grid-work-1-portfolio:hover {
-    background-image: url(./images/digital-marketing-meeting.jpg);
+    background-image: url(./images/proj3.png);
     color: purple;
 }
 /* End of portfolio.html styling */
