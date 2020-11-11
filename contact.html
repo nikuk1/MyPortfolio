@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- Is 'type' declaration necessary? What does this do? / 'media' default is screen so do I need this? -->
     <title>My Contact Info</title>
 </head>
@@ -16,13 +17,13 @@
         <p class="logo" onclick="location.href='#'" alt="Plum Studios Logo"> 
             <!-- Line breaks to move text under background -->
             <br/><br/><br/><br/><br/>
-            &copy; Niku Khatami / Plum Studios</p>
+            &copy; Niku Khatami</p>
 
         <!-- Nav Menu - Unordered List -->
         <ul id="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <!-- Text inside header bg -->
@@ -34,48 +35,45 @@
 
             <div id="about-content">
                 <!-- Beginning of text above portfolio, starts with p tag -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam soluta numquam perferendis illo culpa ducimus? Delectus hic officia nesciunt consequuntur expedita provident voluptatum doloribus eveniet, voluptas quaerat. Asperiores, sint.</p>
+                <p>When there's a will, there's a way</p>
                 <!-- Add more P tags and update font styling if necessary -->
             </div>
 
         <!-- Div tag to wrap Contact Form Box -->
         <div id="contact">
             <h1>Send an email</h1>
-            <form action="#" method="post">
-                <fieldset>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your full name" />
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email address" />
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="What's on your mind?"></textarea>
-                    
-                    <input type="submit" value="Send message" />                  
-                </fieldset>              
+            <form action="https://getform.io/f/6b650195-8502-4297-9a29-8b48e4ad5e04" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Full Name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email">
+                <label for="message">Message:</label>
+                <textarea id="message" type = "text" placeholder="What can we do for you?" name="message"></textarea>
+                <label for="message">File Drop:</label>
+                <div>
+                <input type="file" name="file" required="required">
+                </div>
+                <button class = "submit" type="submit">Send</button>
             </form>
-            <div id = "social">
-                <ul id="navlist">
-                    <li><a class="twitter" href="#"> Twitter</a></li>
-                    <li><a class="youtube" href="#"> Yotube</a></li>
-                    <li><a class="facebook" href="#"> Facebook</a></li>
-                  </ul>
-            </div>
         </div>
-        <!-- End of Contact Form -->
-
-        <!-- Div tag to wrap Social links (sprite image used and icons positioned) -->
-
+        </br>
+            <!-- Div tag to wrap Social links -->
+            <div id = "social">
+                <a href="https://www.facebook.com/niku.khatami" class="fa fa-facebook icon"> Facebook </a>
+                <a href="https://www.linkedin.com/in/niku-khatami-7ba1ba65" class="fa fa-linkedin"> LinkedIn </a>
+                <a href="https://www.instagram.com/nikukhatami" class="fa fa-instagram"> Instagram </a>
+                <a href="https://github.com/nikuk1" class="fa fa-github"> GitGub </a>
+                <a href="#" class="fa fa-paypal"> PayPal </a>
+            </div>
+        <!-- End of Social -->
 
         <!-- Footer with copyright and top navigation -->
         <div id="footer">
             <p id="copyright">&copy; Niku Khatami / Plum Studios</p>
             <p id="totop"><a href="#">To the top</a></p>
         </div>
-
-    </div>
-
+        </div>
+        <!-- End of Footer -->
 </body>
 
 </html>
