@@ -14,7 +14,7 @@
 
 ## Tests
 -
-a
+
 ## License
 -
 
@@ -24,9 +24,6 @@ a
 ## Credits
 U of A Web Development Boot Camp</br>
 nikuk1
-@Cassiecatt
-@cullinans1
-@nnorman15
 
 ## Table of Contents 
 * [Description](#description)
